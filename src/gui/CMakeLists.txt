@@ -6,7 +6,8 @@ target_include_directories(dmsc_gui_static PUBLIC include)
 target_precompile_headers(dmsc_gui_static PUBLIC <string>)
 target_link_libraries(dmsc_gui_static PUBLIC 
   client_shared 
-  server_shared) # TODO: Add the gui libraries
+  server_shared
+) # TODO: Add the gui libraries
 
 # Start custom build steps
 

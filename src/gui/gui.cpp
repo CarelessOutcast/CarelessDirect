@@ -4,11 +4,11 @@
 #include "client/client.h"
 #include "server/server.h"
 
-using namespace gui;
-using namespace std;
-
-string
+namespace gui
+{
+std::string
 getString ()
 {
   return "Gotten String";
+}
 }

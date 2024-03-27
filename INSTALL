@@ -1,0 +1,31 @@
+
+To install this software you'll need to provide the following:
+
+- C++ compiler supporting C++17
+- CMake >= 3.29.0
+- Git
+- Doxygen + Graphviz
+- CppCheck
+- lcov
+- Valgrind (I removed because no m1 integration)
+
+This project also depends GTest, and Gmock. This software is automatically
+pulled from external repositories during the installation.
+
+to configure the project type:
+
+cmake -B <temporary-directory>
+
+Then you can build the project:
+
+cmake --build <temporary-directory>
+
+And finally install it:
+
+cmake --install <temporary-directory>
+
+To generate the documentation run:
+
+cmake --build <temporary-directory> -t doxygen-dmsc
+
+
