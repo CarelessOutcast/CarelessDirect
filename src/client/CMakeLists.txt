@@ -2,8 +2,8 @@ add_library(client_obj OBJECT client.cpp)
 
 # TODO: Understand line 5 & 6
 target_include_directories(client_obj INTERFACE
-  "$<BUILD_INTERFACE>:${CMAKE_CURRENT_SOURCE_DIR}/include"
-  "$<INSTALL_INTERFACE>:${CMAKE_INSTALL_INCLUDEDIR}"
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+  "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
   )
 
 set_target_properties(client_obj PROPERTIES

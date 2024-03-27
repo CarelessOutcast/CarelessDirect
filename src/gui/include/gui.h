@@ -1,5 +1,5 @@
 #pragma once
-namespace gui 
+namespace gui
 {
-  std::string getString();
+std::string getString ();
 }

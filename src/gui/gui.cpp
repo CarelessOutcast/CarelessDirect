@@ -7,7 +7,8 @@
 using namespace gui;
 using namespace std;
 
-string getString()
+string
+getString ()
 {
   return "Gotten String";
 }

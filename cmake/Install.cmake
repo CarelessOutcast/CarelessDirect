@@ -2,8 +2,8 @@ include(GNUInstallDirs)
 
 install(TARGETS client_obj client_shared client_static server_obj server_shared server_static
   EXPORT DMSCLibrary
-  ARCHIVE development
-  LIBRARY runtime
+  ARCHIVE COMPONENT development
+  LIBRARY COMPONENT runtime
   PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dmsc
     COMPONENT runtime
 )
@@ -21,7 +21,7 @@ install(EXPORT DMSCLibrary
   COMPONENT runtime
 )
 
-install(files "dmscConfig.cmake"
+install(FILES "dmscConfig.cmake"
   DESTINATION ${CMAKE_INSTALL_LIBDIR}/dmsc/cmake
 )
 

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Client 
+namespace Client
 {
-  int server(int a, int b);
+int server (int a, int b);
 }
