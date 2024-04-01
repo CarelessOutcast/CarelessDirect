@@ -1,4 +1,6 @@
+include(GetGui)
 add_executable(gui_test gui_test.cpp)
-target_link_libraries(gui_test PRIVATE dmsc_gui_static)
+target_include_directories(gui_test PRIVATE ${GTKMM_INCLUDE_DIRS})
+target_link_libraries(gui_test PRIVATE dmsc_gui_static ${GTKMM_LIBRARIES})
 AddTests(gui_test)
 EnableCoverage(gui_obj)
