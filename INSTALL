@@ -1,4 +1,3 @@
-
 To install this software you'll need to provide the following:
 
 - C++ compiler supporting C++17
@@ -28,4 +27,10 @@ To generate the documentation run:
 
 cmake --build <temporary-directory> -t doxygen-dmsc
 
+
+---
+
+For development purposes: 
+
+Assuming you're using Clangd LSP server (and it's running) [Read This]{https://gist.github.com/Strus/042a92a00070a943053006bf46912ae9}
 

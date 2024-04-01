@@ -1,11 +1,8 @@
-include(FetchContent)
+find_package(PkgConfig REQUIRED)
 
-FetchContent_Declare(
-  GUI
-  GIT_REPOSITORY 
-  GIT_TAG 
-  )
+pkg_check_modules(GTKMM gtkmm-4.0 REQUIRED)
 
-option()
+include_directories(${GTKMM_INCLUDE_DIRS})
+link_directories(${GTKMM_LIBRARY_DIRS})
+add_definitions(${GTKMM_CFLAGS_OTHER})
 
-FetchContent_MakeAvailable()
