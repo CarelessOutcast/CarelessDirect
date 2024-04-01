@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkWindow" id="DialogBasic">
+    <property name="can_focus">True</property>
+    <property name="hide_on_close">True</property>
+    <property name="title" translatable="yes">Direct Messaging Server and Client</property>
+    <property name="default_width">350</property>
+    <property name="default_height">120</property>
+    <!-- Vertical Box -->
+    <child>
+    <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <!-- Join Chat Server -->
+        <child>
+          <object class="GtkButton" id="join_chat_server_button">
+            <property name="label"> Join Chat Server </property>
+            <!-- <signal name="clicked" handler="on_join_chat_server_button_clicked" object="DialogBasic" swapped="no"/> -->
+          </object>
+        </child>
+        <!-- Create Chat Server -->
+        <child>
+          <object class="GtkButton" id="create_chat_server_button">
+            <property name="label"> Create Chat Server </property>
+            <!-- <signal name="clicked" handler="on_create_chat_server_button_clicked" object="DialogBasic" swapped="no"/> -->
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
+
+
